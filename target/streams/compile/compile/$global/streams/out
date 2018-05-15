@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/jumpei/go/src/github.com/pei0804/scala-practice/src/main/scala/HelloWorld.scala:61:25: illegal start of simple pattern[0m
+[0m[[0m[31merror[0m] [0m[0m    for (x <- 1 to 100; )[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/jumpei/go/src/github.com/pei0804/scala-practice/src/main/scala/HelloWorld.scala:62:3: illegal start of simple expression[0m
+[0m[[0m[31merror[0m] [0m[0m  }[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

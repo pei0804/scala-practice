@@ -56,8 +56,35 @@ object ForList {
   }
 }
 
-object ForQuestion {
+object PatternUsage {
   def main(args: Array[String]): Unit = {
-    for (x <- 1 to 100; )
+    val (x, y) = (1, 2)
+    (x, y) match {
+      case(1, 2) => println("one two")
+      case _ => println("other")
+    }
+  }
+}
+
+object PatternGuard {
+  def main(args: Array[String]): Unit = {
+    val piyo = "piyo"
+    piyo match {
+      case p if p.length == 4 => println("piyo")
+      case p if p.length >= 5 => println("short piyo")
+    }
+  }
+}
+
+object PatternTuple {
+  def main(args: Array[String]): Unit = {
+    val p = "piyo"
+    val h = "hoge"
+    (p, h) match {
+      case ("piyo", "fuga") => println("piyo fuga")
+      case (_, "hoge") => println("other hoge") // ここヒット
+      case ("piyo", _) => println("piyo other")
+      case (_, _) => println("other")
+    }
   }
 }
