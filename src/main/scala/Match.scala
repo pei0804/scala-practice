@@ -71,3 +71,14 @@ object MatchType {
       }
   }
 }
+
+object PatternGuard {
+  def main(args: Array[String]): Unit = {
+    def patternGuardSample(tuple: (Any, Any)) =
+      tuple match {
+        case(x, y) if x == y => {
+          //タプル要素が同じだった場合
+        }
+      }
+  }
+}
