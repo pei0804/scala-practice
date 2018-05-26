@@ -6,7 +6,7 @@ object Option {
     // Javaでは、このようなケースではnullを使うことが一般的です。
 
     // 値が存在している
-    val option: Option[String] = Option("test") // Some("test")
+    val option:Option[String] = Some("test") // Some("test")
 
     // 値を取得
     val result = option.get // nullの場合はNoSuchElementExceptionが発生する
@@ -22,7 +22,7 @@ object Option {
 object Option2 {
   def main(args: Array[String]): Unit = {
     // 値が存在しない場合
-    val option: Option[String] = Option(null) // None
+    val option: Option[String] = null // None
 
     // 値、もしくはnullを取得
     val result = option.orNull // null
@@ -40,7 +40,7 @@ object Option2 {
 
 object OptionPattern {
   def main(args: Array[String]): Unit = {
-    val option: Option[String] = Option(null) // None
+    val option: Option[String] = null // None
     val result: String = option match {
       case Some(x) => x // 値がある時
       case None => "" // 値がない時
@@ -50,7 +50,7 @@ object OptionPattern {
 
 object OptionTips {
   def main(args: Array[String]): Unit = {
-    val option: Option[String] = Option("A", "B", "C")
+    val option: Option[String] = Some("A")
     option.foreach{value: String => println(value)}
   }
 }

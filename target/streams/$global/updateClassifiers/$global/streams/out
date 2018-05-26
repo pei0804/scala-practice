@@ -281,51 +281,119 @@
 [debug] == resolving dependencies default#scala-practice$sources;0.1->org.scala-lang#scala-compiler;2.12.5 [scala-tool->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 		tried /Users/j-chikamori/.ivy2/local/jline/jline/2.14.5/srcs/jline-sources.jar
-[debug] 		tried /Users/j-chikamori/.ivy2/local/org.scala-lang/scala-compiler/2.12.5/srcs/scala-compiler-sources.jar
-[debug] 		tried /Users/j-chikamori/.ivy2/local/org.scala-lang.modules/scala-xml_2.12/1.0.6/srcs/scala-xml_2.12-sources.jar
-[debug] 		tried /Users/j-chikamori/.ivy2/local/org.scala-lang/scala-library/2.12.5/srcs/scala-library-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/jline/jline/2.14.5/jline-2.14.5-sources.jar
-[debug] 		tried /Users/j-chikamori/.ivy2/local/org.scala-lang/scala-reflect/2.12.5/srcs/scala-reflect-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.5/scala-compiler-2.12.5-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.5/scala-reflect-2.12.5-sources.jar
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
+[debug] 	[NOT REQUIRED] jline#jline;2.14.5!jline.jar(src)
+[debug] 		tried /Users/jumpei/.ivy2/local/org.scala-lang/scala-library/2.12.5/srcs/scala-library-sources.jar
+[debug] 		tried /Users/jumpei/.ivy2/local/org.scala-lang/scala-reflect/2.12.5/srcs/scala-reflect-sources.jar
+[debug] no default ivy user dir defined: set to /Users/jumpei/.ivy2
+[debug] no default ivy user dir defined: set to /Users/jumpei/.ivy2
+[debug] 		tried /Users/jumpei/.ivy2/local/org.scala-lang/scala-compiler/2.12.5/srcs/scala-compiler-sources.jar
+[debug] no default ivy user dir defined: set to /Users/jumpei/.ivy2
+[debug] no default ivy user dir defined: set to /Users/jumpei/.ivy2
+[debug] no default ivy user dir defined: set to /Users/jumpei/.ivy2
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] no default cache defined: set to /Users/jumpei/.ivy2/cache
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] no default cache defined: set to /Users/jumpei/.ivy2/cache
+[debug] no default cache defined: set to /Users/jumpei/.ivy2/cache
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] no default cache defined: set to /Users/jumpei/.ivy2/cache
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] no default cache defined: set to /Users/jumpei/.ivy2/cache
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] settings loaded (49ms)
+[debug] 	default cache: /Users/jumpei/.ivy2/cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] settings loaded (50ms)
+[debug] 	public [ibiblio]
+[debug] 	default cache: /Users/jumpei/.ivy2/cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] settings loaded (53ms)
+[debug] 	default cache: /Users/jumpei/.ivy2/cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
 [debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5-sources.jar
-[info] downloading https://repo1.maven.org/maven2/jline/jline/2.14.5/jline-2.14.5-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/jline/jline/2.14.5/jline-2.14.5-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.5/scala-reflect-2.12.5-sources.jar
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] settings loaded (59ms)
+[debug] 	default cache: /Users/jumpei/.ivy2/cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] including url: jar:file:/Users/jumpei/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.4/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] settings loaded (78ms)
+[debug] 	default cache: /Users/jumpei/.ivy2/cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.5/scala-compiler-2.12.5-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.5/scala-reflect-2.12.5-sources.jar ...
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.5/scala-reflect-2.12.5-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5-sources.jar
 [info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.5/scala-compiler-2.12.5-sources.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.5/scala-compiler-2.12.5-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/jline/jline/2.14.5/jline-2.14.5-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6-sources.jar.sha1
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.5/scala-reflect-2.12.5-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.5/scala-reflect-2.12.5-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/jline/jline/2.14.5/jline-2.14.5-sources.jar
-[info] 	[SUCCESSFUL ] jline#jline;2.14.5!jline.jar(src) (655ms)
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.5/scala-compiler-2.12.5-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src) (750ms)
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.5/scala-compiler-2.12.5-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.12.5!scala-compiler.jar(src) (950ms)
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.5/scala-reflect-2.12.5-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5-sources.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.5/scala-reflect-2.12.5-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.12.5!scala-reflect.jar(src) (1926ms)
+[info] 	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.12.5!scala-reflect.jar(src) (4517ms)
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5-sources.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#scala-library;2.12.5!scala-library.jar(src) (2107ms)
-[debug] :: resolution report :: resolve 53ms :: artifacts dl 2122ms
-[debug] 	report for default#scala-practice$sources;0.1 compile produced in /Users/j-chikamori/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-compile.xml
-[debug] 	report for default#scala-practice$sources;0.1 runtime produced in /Users/j-chikamori/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-runtime.xml
-[debug] 	report for default#scala-practice$sources;0.1 test produced in /Users/j-chikamori/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-test.xml
-[debug] 	report for default#scala-practice$sources;0.1 provided produced in /Users/j-chikamori/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-provided.xml
-[debug] 	report for default#scala-practice$sources;0.1 optional produced in /Users/j-chikamori/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-optional.xml
-[debug] 	report for default#scala-practice$sources;0.1 compile-internal produced in /Users/j-chikamori/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-compile-internal.xml
-[debug] 	report for default#scala-practice$sources;0.1 runtime-internal produced in /Users/j-chikamori/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-runtime-internal.xml
-[debug] 	report for default#scala-practice$sources;0.1 test-internal produced in /Users/j-chikamori/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-test-internal.xml
-[debug] 	report for default#scala-practice$sources;0.1 plugin produced in /Users/j-chikamori/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-plugin.xml
-[debug] 	report for default#scala-practice$sources;0.1 pom produced in /Users/j-chikamori/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-pom.xml
-[debug] 	report for default#scala-practice$sources;0.1 scala-tool produced in /Users/j-chikamori/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-scala-tool.xml
-[debug] 	resolve done (53ms resolve - 2122ms download)
+[info] 	[SUCCESSFUL ] org.scala-lang#scala-library;2.12.5!scala-library.jar(src) (5090ms)
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.5/scala-compiler-2.12.5-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.5/scala-compiler-2.12.5-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.12.5!scala-compiler.jar(src) (5614ms)
+[debug] :: resolution report :: resolve 902ms :: artifacts dl 5812ms
+[debug] 	report for default#scala-practice$sources;0.1 compile produced in /Users/jumpei/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-compile.xml
+[debug] 	report for default#scala-practice$sources;0.1 runtime produced in /Users/jumpei/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-runtime.xml
+[debug] 	report for default#scala-practice$sources;0.1 test produced in /Users/jumpei/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-test.xml
+[debug] 	report for default#scala-practice$sources;0.1 provided produced in /Users/jumpei/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-provided.xml
+[debug] 	report for default#scala-practice$sources;0.1 optional produced in /Users/jumpei/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-optional.xml
+[debug] 	report for default#scala-practice$sources;0.1 compile-internal produced in /Users/jumpei/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-compile-internal.xml
+[debug] 	report for default#scala-practice$sources;0.1 runtime-internal produced in /Users/jumpei/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-runtime-internal.xml
+[debug] 	report for default#scala-practice$sources;0.1 test-internal produced in /Users/jumpei/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-test-internal.xml
+[debug] 	report for default#scala-practice$sources;0.1 plugin produced in /Users/jumpei/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-plugin.xml
+[debug] 	report for default#scala-practice$sources;0.1 pom produced in /Users/jumpei/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-pom.xml
+[debug] 	report for default#scala-practice$sources;0.1 scala-tool produced in /Users/jumpei/go/src/github.com/pei0804/scala-practice/target/scala-2.12/resolution-cache/reports/default-scala-practice$sources-scala-tool.xml
+[debug] 	resolve done (902ms resolve - 5812ms download)

@@ -72,7 +72,7 @@ object MatchType {
   }
 }
 
-object PatternGuard {
+object PatternGuard2 {
   def main(args: Array[String]): Unit = {
     def patternGuardSample(tuple: (Any, Any)) =
       tuple match {
