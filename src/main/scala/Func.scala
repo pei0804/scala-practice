@@ -105,7 +105,7 @@ object Func6 {
     def price(total: Int, discount: Int): Int = total - discount
 
     // 第二引数を省略
-    val f1 = price(100, _)
+    val f1 = price(100, _: Int)
     // 不足分のdiscountのみ指定
     f1(100)
 
