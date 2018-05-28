@@ -27,6 +27,7 @@ object Trait {
   def main(args: Array[String]): Unit = {
     trait TraitSample {
       val value: String
+
       def name = "TraitSample"
     }
   }
@@ -56,7 +57,7 @@ object Trait2 {
       def print() = println("TraitPrint")
     }
 
-    class ClassSample{}
+    class ClassSample {}
 
     val sample = new TraitString {
       override def string: String = "TraitString"
@@ -133,6 +134,7 @@ object Super {
 // トレイトのコンストラクタが実行されるタイミングではまだ初期化されません
 // なぜなら、実装クラスで具体が書かれているから
 object Lazy {
+
   // 間違ったコード
   trait TraitSample {
     // 抽象フィールド
@@ -155,6 +157,7 @@ object Lazy {
 }
 
 object Lazy2 {
+
   // 正しいコード
   trait TraitSample {
     // 抽象フィールド
@@ -211,12 +214,12 @@ object Singleton {
 // applyメソッドを定義する
 object FactoryApply {
   def main(args: Array[String]): Unit = {
-    class DBAccess private(url: String, user:String, password: String) {
+    class DBAccess private(url: String, user: String, password: String) {
     }
 
     object DBAccess {
-      def apply(url:String, user: String, password: String) =
-        new DBAccess(url, user,password)
+      def apply(url: String, user: String, password: String) =
+        new DBAccess(url, user, password)
     }
 
     // オブジェクト名（引数）
@@ -225,6 +228,107 @@ object FactoryApply {
     // 混乱を招かないように、他の用途には利用しない方が懸命でしょう
     // なおapplyメソッドはクラスにも定義可能であり、その場合は
     // インスタンス（引数）で呼び出せます
-    db("test2", "test2", "test2")
+//    db("", "test2", "test2")
+  }
+}
+
+// 抽出子
+// unapplyメソッドを定義したオブジェクトです
+// unapplyメソッドには、applyメソッドとは逆のことを行う処理を記述します
+object Unapply {
+  def main(args: Array[String]): Unit = {
+    class Book private
+    (val title: String, val author: String, val publisher: String, val price: Int)
+
+    object Book {
+      def apply(title: String, author: String, publisher: String, price: Int): Book =
+        new Book(title, author, publisher, price)
+
+      def unapply(book: Book): Option[(String, String, String, Int)] =
+        Some(book.title, book.author, book.publisher, book.price)
+    }
+
+    val book = Book("Seasar2徹底入門", "ぺい", "翔泳社", 3990)
+
+    // 抽出子でBookクラスのインスタンスから情報を抽出
+    val Book(title, author, publisher, price) = book
+
+    println("タイトル" + title)
+    println("著者" + author)
+    println("出版社" + publisher)
+    println("価格" + price)
+
+    // 可変長の場合はunapplySeqを定義する
+    class Authors2 private(val names: String*)
+
+    // Authorsのコンパニオンオブジェクト
+    object Authors2{
+      // ファクトリメソッド
+      def apply(names: String*): Authors2 = new Authors2(names:_*)
+
+      def unapplySeq(authors: Authors2): Option[List[String]] = Some(authors.names.toList)
+    }
+  }
+}
+
+// CaseClass
+// いくつかのメソッドやコンパニオンオブジェクトを自動生成するクラスです
+// 以下のようなメソッドを自動で生成されます
+
+// 基本コンストラクタの引数にvalを付加
+// 上記のフィールドを使用してequals, hashCode, toStringメソッドを実装
+// インスタンスの型が一致する場合はtrueを返すcanEqualメソッドを実装
+// フィールドをコピーして新規インスタンスを生成するcopyメソッドを実装、変更したいフィールドのみ指定する
+// コンパニオンオブジェクトを生成し、apply,unapply,unapplySeqを実装
+
+// case class クラス名（引数）
+
+case class A()
+
+// パッケージオブジェクト
+// クラス、メソッド、型の別名、暗黙の型変換などを任意のパッケージのメンバーとする構文
+// 例えば、jp.sf.amateras.scala.oopパッケージにLogクラスがあり
+// このLogクラスをjp.sf.amateras.scala.oop.renewalパッケージへ移動したとします
+// すると、Logクラスの参照元すべてに変更が発生し、下位互換性が失われます
+// このような場合、パッケージオブジェクトを別名で定義し
+// パッケージ内ではその別名を使ってクラスを参照することで
+// 参照元の変更なく下位互換性を担保できます
+// パッケージオブジェクトは、ファイル名「package.scala」に定義するのが慣習です
+// 各パッケージに一つのみパッケージオブジェクトを定義できます
+
+// このようにしておくことで、jp.sf.amateras.scala.oopパッケージでは
+//「jp.sf.amateras.scala.oop.Log」というクラス名で
+// 「jp.sf.amateras.scala.oop.renewal.Log」を参照できるようになります
+
+//package jp.sf.amateras.scala
+//
+//package object oop {
+//  type Log = jp.sf.amateras.scala.oop.renewal.Log
+//}
+
+//import jp.sf.amateras.scala.oop._
+//val log = new Log
+
+// 列挙型
+
+object Enum {
+  def main(args: Array[String]): Unit = {
+    object Sex extends Enumeration {
+      // 各列挙子の型は、Enumeration#Valueめそっどの戻り値であるValueクラス（実体はValクラス）
+      type Sex = Value
+      val Man, Woman = Value
+
+      val sex = Sex
+      // 列挙子の名前
+      val name = sex.Man.toString()
+      // 列挙子のID
+      val id = sex.Man.id
+      // 列挙子の名前から列挙子を取得
+      val s1 = sex.withName("Man")
+      // 列挙子のIDから列挙子を取得
+      val s2 = Sex(1)
+      // すべての列挙子を取得
+      def printSex = Sex.values foreach println
+    }
   }
 }

@@ -1,3 +1,4 @@
+import scala.collection.mutable.ArrayBuffer
 // クラス間でインターフェイスとフィールドを共有する時に使う
 
 trait HairColor
@@ -42,9 +43,9 @@ object CallPet {
   def main(args: Array[String]): Unit = {
     val dog = new Dog("Harry")
     val cat = new Cat("Sally")
-    val animals = ArrayBuffer.empty[Pet]
-    animals.append(dog)
-    animals.append(cat)
-    animals.foreach(pet => println(pet.name))
+//    val animals = ArrayBuffer.empty[Pet]
+//    animals.append(dog)
+//    animals.append(cat)
+//    animals.foreach(pet => println(pet.name))
   }
 }
