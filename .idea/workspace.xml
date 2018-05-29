@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c880657-72a1-4db2-97b1-2ee650514fab" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Generics.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Generics.scala" afterDir="false" />
-    </list>
+    <list default="true" id="3c880657-72a1-4db2-97b1-2ee650514fab" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -67,11 +65,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Generics.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Generics.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Generics.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="136" column="39" selection-start-line="136" selection-start-column="39" selection-end-line="136" selection-end-column="39" />
+            <state relative-caret-position="561">
+              <caret line="118" selection-start-line="118" selection-end-line="118" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Collection.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Collection.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -130,6 +137,7 @@
         <option value="$PROJECT_DIR$/src/main/scala/TraitPractice.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Trait.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Generics.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Collection.scala" />
       </list>
     </option>
   </component>
@@ -356,7 +364,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49465000" />
+    <option name="totallyTimeSpent" value="49703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="838" height="1050" extended-state="0" />
@@ -434,13 +442,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ClassCompositionWithMixins.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ideaLibSources/scala-library-2.12.5-sources.jar!/scala/Double.scala" />
     <entry file="jar://$USER_HOME$/.ideaLibSources/scala-library-2.12.5-sources.jar!/scala/collection/TraversableLike.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/Calc.scala">
@@ -663,8 +664,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Generics.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="136" column="39" selection-start-line="136" selection-start-column="39" selection-end-line="136" selection-end-column="39" />
+        <state relative-caret-position="561">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Collection.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
         </state>
       </provider>
     </entry>
