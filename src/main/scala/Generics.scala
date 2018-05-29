@@ -97,3 +97,23 @@ object Generics4 {
     }
   }
 }
+
+// @specialized
+// 型パラメータにプリミティブ型を指定する
+// @specialized アノテーションを付与することで、
+// 型パラメーターにプリミティブ型を指定したとき処理を効率化できます
+// 通常、型パラメーターはコンパイルすると、バイトコード上から型の情報が削除されるため
+// Any型に変換されます、しかしIntのようなAnyVal型パラメータに指定する場合
+// ボクシング処理が発生し非効率です
+// @specializedアノテーションは、AnyVal型に対応する各プリミティブ型のために
+// 個別の実装を生成します プリミティブ型を使う場合
+// 個別に生成されたクラスを使用するため、パフォーマンス向上のメリットがあります
+object Generics5 {
+  def main(args: Array[String]): Unit = {
+    // 全てのプリミティブ型に対応した実装を生成
+    class HelloWorld[@specialized T]
+
+    // Int型に対応した実装のみを生成（複数指定可能）
+    class HelloWorld2[@specialized(Int) T]
+  }
+}
