@@ -1,4 +1,3 @@
-import scala.sys.process.processInternal.OutputStream
 // ジェネリクス
 // タイプセーフで汎用的な型を定義
 
@@ -81,22 +80,22 @@ object Generics3 {
 }
 
 // 型パラメータによって呼び出すメソッドを変更したい
-object Generics4 {
-  def main(args: Array[String]): Unit = {
-    class HelloWorld[A](param: A) {
+//object Generics4 {
+//  def main(args: Array[String]): Unit = {
+//    class HelloWorld[A](param: A) {
       // 型パラメータAがStringの場合、printメソッド呼び出し可能
-      def print(implicit evidence: A =:= String) = println(param)
+//      def print(implicit evidence: A =:= String) = println(param)
 
       // 型パラメータAがOutputStreamのサブクラスの場合
       // outputメソッドを呼び出し可能
-      def output(implicit evidence: A <:< OutputStream) = println(param)
+//      def output(implicit evidence: A <:< OutputStream) = println(param)
 
       // 型パラメータAが暗黙の型変換でLongに変換可能な場合
       // dobleメソッド呼び出し可能
-      def double(implicit evidence: A => Long) = param * 2
-    }
-  }
-}
+//      def double(implicit evidence: A => Long) = param * 2
+//    }
+//  }
+//}
 
 // @specialized
 // 型パラメータにプリミティブ型を指定する
@@ -108,12 +107,12 @@ object Generics4 {
 // @specializedアノテーションは、AnyVal型に対応する各プリミティブ型のために
 // 個別の実装を生成します プリミティブ型を使う場合
 // 個別に生成されたクラスを使用するため、パフォーマンス向上のメリットがあります
-object Generics5 {
-  def main(args: Array[String]): Unit = {
-    // 全てのプリミティブ型に対応した実装を生成
-    class HelloWorld[@specialized T]
-
-    // Int型に対応した実装のみを生成（複数指定可能）
-    class HelloWorld2[@specialized(Int) T]
-  }
-}
+//object Generics5 {
+//  def main(args: Array[String]): Unit = {
+//    // 全てのプリミティブ型に対応した実装を生成
+//    class HelloWorld[@specialized T]
+//
+//    // Int型に対応した実装のみを生成（複数指定可能）
+//    class HelloWorld2[@specialized(Int) T]
+//  }
+//}
